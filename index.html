@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binary Cipher Arena 50 Box - Informatics Edition</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tone.js untuk Efek Suara Synth Informatika -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            cyber: {
+              base: '#0B1120',
+              panel: '#111C33',
+              card: '#162440',
+              border: '#23385E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0B1120;
+      background-image: 
+        radial-gradient(at 15% 15%, rgba(56, 189, 248, 0.14) 0px, transparent 45%),
+        radial-gradient(at 85% 20%, rgba(52, 211, 153, 0.12) 0px, transparent 45%),
+        radial-gradient(at 50% 90%, rgba(129, 140, 248, 0.14) 0px, transparent 50%),
+        linear-gradient(to right, rgba(30, 41, 59, 0.35) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(30, 41, 59, 0.35) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+      background-attachment: fixed;
+      color: #E2E8F0;
+      user-select: none;
+    }
+    /* ===== Latar Belakang Tema Teknologi ===== */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='none' stroke='%2338BDF8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'><path d='M0 40h50l14 14h40M110 0v36l16 16h54M220 90h-48l-14 14v40M40 220v-52l16-16h46M0 150h28l12-12M150 220v-30l14-14h56'/><circle cx='50' cy='40' r='3' fill='%2338BDF8'/><circle cx='104' cy='54' r='3'/><circle cx='180' cy='52' r='3' fill='%2334D399' stroke='%2334D399'/><circle cx='172' cy='90' r='3'/><circle cx='158' cy='144' r='3' fill='%2338BDF8'/><circle cx='56' cy='152' r='3'/><circle cx='102' cy='152' r='3' fill='%2334D399' stroke='%2334D399'/><circle cx='28' cy='150' r='3' fill='%2338BDF8'/><circle cx='164' cy='176' r='3'/><rect x='90' y='96' width='28' height='28' rx='4'/><path d='M96 96v-6M104 96v-6M112 96v-6M96 124v6M104 124v6M112 124v6M90 104h-6M90 112h-6M118 104h6M118 112h6'/></svg>");
+      background-size: 220px 220px;
+      opacity: 0.07;
+      -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 85%);
+      mask-image: radial-gradient(ellipse at center, #000 20%, transparent 85%);
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        repeating-linear-gradient(to bottom, rgba(148, 163, 184, 0.035) 0px, rgba(148, 163, 184, 0.035) 1px, transparent 1px, transparent 4px),
+        radial-gradient(ellipse at center, transparent 55%, rgba(2, 6, 23, 0.65) 100%);
+    }
+    #techBg {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .greek-silhouette {
+      position: absolute;
+      right: -0.35rem;
+      bottom: -2.6rem;
+      font-family: "JetBrains Mono", "Plus Jakarta Sans", "Segoe UI", "Noto Sans", sans-serif;
+      font-weight: 800;
+      font-size: 9.5rem;
+      line-height: 1;
+      opacity: 0.16;
+      pointer-events: none;
+      user-select: none;
+      -webkit-mask-image: linear-gradient(to top left, #000 35%, transparent 95%);
+      mask-image: linear-gradient(to top left, #000 35%, transparent 95%);
+    }
+    .standing-row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 60px;
+      transition: transform 0.55s cubic-bezier(0.34, 1.2, 0.64, 1);
+    }
+    .standing-bar {
+      transition: width 0.6s ease;
+    }
+    .cyber-glass {
+      background: rgba(17, 28, 51, 0.82);
+      backdrop-filter: blur(14px);
+      border: 1.5px solid rgba(56, 189, 248, 0.22);
+      box-shadow: 0 8px 32px 0 rgba(2, 6, 23, 0.55);
+    }
+    .node-box {
+      transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .node-box:hover:not(:disabled) {
+      transform: translateY(-3px) scale(1.03);
+      border-color: #38BDF8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+    }
+    .node-box:active:not(:disabled) {
+      transform: translateY(0px) scale(0.98);
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+    /* Scrollbar khusus log terminal */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(56, 189, 248, 0.35);
+      border-radius: 8px;
+    }
+    /* Print Styling untuk Lembar Soal Kertas */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printArea, #printArea * {
+        visibility: visible;
+      }
+      #printArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        padding: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      #techBg, body::before, body::after {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen p-4 md:p-6 flex flex-col justify-between">
+
+  <!-- Latar belakang animasi: hujan biner + jaringan node -->
+  <canvas id="techBg" aria-hidden="true"></canvas>
+
+  <!-- ================= HEADER TERMINAL INFORMATIKA ================= -->
+  <header class="max-w-7xl w-full mx-auto mb-5 no-print">
+    <div class="cyber-glass rounded-3xl p-4 md:px-6 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-2xl bg-sky-500/20 border-2 border-sky-400/50 flex items-center justify-center text-sky-300 font-mono font-extrabold text-lg shadow-inner">
+          101
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-sky-300 font-bold">
+              SYS.ASCII.7BIT // NO-LEADING-ZERO
+            </span>
+          </div>
+          <h1 class="text-xl md:text-2xl font-extrabold tracking-tight text-slate-100">
+            BINARY CIPHER <span class="text-sky-300 font-mono">[50_NODES]</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Info Poin & Tombol Kontrol Guru -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        <div class="flex items-center gap-2.5 bg-slate-900/80 border border-slate-700 px-3.5 py-2 rounded-2xl text-xs md:text-sm font-mono font-bold">
+          <span class="text-emerald-300">ACK: +50</span>
+          <span class="text-slate-600">|</span>
+          <span class="text-rose-300">ERR: -20</span>
+        </div>
+
+        <button onclick="openAsciiModal()" class="bg-amber-400/15 hover:bg-amber-400/25 text-amber-200 border border-amber-400/40 font-bold px-3.5 py-2 rounded-2xl text-xs md:text-sm transition flex items-center gap-1.5">
+          <span>📟</span> Tabel 7-Bit & ASCII
+        </button>
+
+        <button onclick="openTeacherModal()" class="bg-sky-400/15 hover:bg-sky-400/25 text-sky-200 border border-sky-400/40 font-bold px-3.5 py-2 rounded-2xl text-xs md:text-sm transition flex items-center gap-1.5">
+          <span>⚙️</span> Root Config & Cetak Soal
+        </button>
+
+        <button onclick="toggleSound()" id="soundBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-bold p-2 rounded-2xl text-sm transition" title="Audio Synth">
+          🔊
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PAPAN SKOR 4 KELOMPOK (CYBER TEAM CARDS) ================= -->
+  <section class="max-w-7xl w-full mx-auto mb-5 no-print">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5" id="scoreboardContainer">
+      <!-- Dirender otomatis oleh JS -->
+    </div>
+  </section>
+
+  <!-- ================= MAIN AREA: 50 NODE SOAL + TERMINAL LOG ================= -->
+  <main class="max-w-7xl w-full mx-auto flex-1 grid grid-cols-1 lg:grid-cols-4 gap-5 no-print">
+    
+    <!-- Grid 50 Nomor Soal -->
+    <div class="lg:col-span-3 cyber-glass rounded-3xl p-5 flex flex-col justify-between">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-700/80">
+        <div class="flex items-center gap-2.5">
+          <span class="px-2.5 py-1 rounded-lg bg-sky-500/20 border border-sky-400/40 font-mono text-xs font-bold text-sky-300">
+            MATRIX_50
+          </span>
+          <h2 class="font-extrabold text-slate-100 text-base md:text-lg">
+            Papan Klaim Dekoding Kelompok
+          </h2>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-mono font-bold text-slate-300">
+          <span id="remainingCounter" class="bg-slate-900/90 px-3 py-1 rounded-xl border border-slate-700 text-sky-300">
+            OPEN_NODES: 50 / 50
+          </span>
+          <button onclick="confirmResetBoxes()" title="Kosongkan semua kotak (skor tetap)" class="bg-amber-400/15 hover:bg-amber-400/25 text-amber-200 border border-amber-400/40 px-3 py-1 rounded-xl flex items-center gap-1.5 transition">
+            ↺ Reset Kotak
+          </button>
+          <button onclick="confirmResetGame()" title="Reset kotak + skor + log" class="text-rose-300 hover:text-rose-200 hover:underline flex items-center gap-1">
+            [RESET_SYS]
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid 10x5 untuk 50 Soal -->
+      <div id="questionGrid" class="grid grid-cols-5 sm:grid-cols-10 gap-2.5 my-auto">
+        <!-- Dirender oleh JS -->
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-slate-700/80 flex flex-wrap items-center justify-between text-xs font-mono text-slate-400 gap-2">
+        <span>> Pilih nomor node sesuai lembar kertas, pilih kelompok, dan input hasil dekoding.</span>
+        <span class="text-sky-300 font-bold">7-Bit Bobot: [64][32][16][8][4][2][1]</span>
+      </div>
+    </div>
+
+    <!-- Kolom Kanan: Klasemen + Terminal Log -->
+    <div class="flex flex-col gap-5 min-h-0">
+
+    <!-- Klasemen Poin -->
+    <div class="cyber-glass rounded-3xl p-5">
+      <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-700/80">
+        <h3 class="font-extrabold text-slate-100 text-sm font-mono flex items-center gap-2">
+          <span class="text-amber-300">🏆</span> KLASEMEN
+        </h3>
+        <span id="standingsNote" class="text-[10px] font-mono font-bold bg-amber-500/15 border border-amber-400/40 text-amber-200 px-2 py-0.5 rounded-md">
+          LIVE_RANK
+        </span>
+      </div>
+      <div id="standingsContainer" class="relative" style="height: 240px;">
+        <!-- Dirender oleh JS -->
+      </div>
+    </div>
+
+    <!-- Riwayat Klaim / Terminal Log Kelas -->
+    <div class="cyber-glass rounded-3xl p-5 flex flex-col h-[340px] lg:h-auto lg:flex-1 lg:min-h-[260px]">
+      <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-700/80">
+        <h3 class="font-extrabold text-slate-100 text-sm font-mono flex items-center gap-2">
+          <span class="text-emerald-400">>_</span> TERMINAL_LOG
+        </h3>
+        <span class="text-[10px] font-mono font-bold bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-2 py-0.5 rounded-md">
+          ONLINE
+        </span>
+      </div>
+      <div id="activityLog" class="flex-1 overflow-y-auto space-y-2 pr-1 text-xs font-mono">
+        <!-- Dirender oleh JS -->
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- ================= POPUP 1: PILIH KELOMPOK ================= -->
+  <div id="teamPickModal" class="fixed inset-0 bg-slate-950/75 backdrop-blur-md z-50 hidden items-center justify-center p-4 no-print">
+    <div class="bg-cyber-panel border-2 border-sky-400/40 rounded-3xl max-w-lg w-full p-6 shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-700">
+        <div class="flex items-center gap-3.5">
+          <div id="pickQBadge" class="w-14 h-14 rounded-2xl bg-sky-500/20 border-2 border-sky-400 text-sky-300 font-mono font-extrabold text-2xl flex items-center justify-center shadow-md">
+            #01
+          </div>
+          <div>
+            <span class="text-[11px] font-mono font-extrabold uppercase tracking-wider text-amber-300 bg-amber-500/15 px-2.5 py-0.5 rounded-md border border-amber-400/30">
+              STEP_1 // SELECT_TEAM
+            </span>
+            <h3 class="text-xl font-extrabold text-slate-100 mt-1">Pilih Kelompok</h3>
+          </div>
+        </div>
+        <button onclick="closeTeamPicker()" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold flex items-center justify-center text-lg border border-slate-600">
+          ✕
+        </button>
+      </div>
+      <p class="mt-4 text-xs font-mono text-slate-400">> Kelompok mana yang akan menjawab node ini?</p>
+      <div class="grid grid-cols-2 gap-3 mt-3" id="teamPickContainer">
+        <!-- Dirender oleh JS -->
+      </div>
+      <button onclick="closeTeamPicker()" class="mt-5 w-full py-3 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-sm border border-slate-600 transition">
+        Batal
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= POPUP 2: INPUT JAWABAN ================= -->
+  <div id="answerModal" class="fixed inset-0 bg-slate-950/75 backdrop-blur-md z-50 hidden items-center justify-center p-4 no-print">
+    <div id="answerModalBox" class="bg-cyber-panel border-2 border-sky-400/40 rounded-3xl max-w-lg w-full p-6 shadow-2xl transition-all">
+      
+      <!-- Header Modal -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-700">
+        <div class="flex items-center gap-3.5">
+          <div id="modalQBadge" class="w-14 h-14 rounded-2xl bg-sky-500/20 border-2 border-sky-400 text-sky-300 font-mono font-extrabold text-2xl flex items-center justify-center shadow-md">
+            #01
+          </div>
+          <div>
+            <span class="text-[11px] font-mono font-extrabold uppercase tracking-wider text-emerald-300 bg-emerald-500/15 px-2.5 py-0.5 rounded-md border border-emerald-400/30">
+              STEP_2 // DECODE_SUBMISSION
+            </span>
+            <h3 class="text-xl font-extrabold text-slate-100 mt-1">Verifikasi Node Soal</h3>
+          </div>
+        </div>
+        <button onclick="closeAnswerModal()" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold flex items-center justify-center text-lg border border-slate-600">
+          ✕
+        </button>
+      </div>
+
+      <!-- Kelompok terpilih (dipilih di popup sebelumnya) -->
+      <div class="mt-5">
+        <label class="block text-xs font-mono font-extrabold uppercase tracking-wider text-slate-300 mb-2.5">
+          Kelompok Pengirim:
+        </label>
+        <div id="teamSelectorContainer">
+          <!-- Dirender oleh JS -->
+        </div>
+      </div>
+
+      <!-- Langkah 2: Input Kata Hasil Dekoding -->
+      <div class="mt-5">
+        <div class="flex items-center justify-between mb-2">
+          <label for="answerInput" class="text-xs font-mono font-extrabold uppercase tracking-wider text-slate-300">
+            Input String Karakter ASCII:
+          </label>
+          <span id="charLengthHint" class="text-xs font-mono font-bold text-sky-300 bg-sky-500/20 border border-sky-400/30 px-2.5 py-0.5 rounded-md">
+            LEN: ? CHAR
+          </span>
+        </div>
+
+        <input 
+          type="text" 
+          id="answerInput" 
+          autocomplete="off"
+          placeholder="Ketik hasil dekoding..."
+          class="w-full px-4 py-3.5 rounded-2xl bg-slate-900/90 border-2 border-slate-600 focus:border-sky-400 focus:outline-none font-mono text-xl font-extrabold text-sky-200 tracking-widest text-center placeholder-slate-600"
+        />
+        <p id="caseSensitivityNote" class="text-[11px] font-mono text-slate-400 mt-1.5 text-center">
+          Pastikan hasil konversi biner 7-bit sesuai dengan karakter ASCII di kertas.
+        </p>
+      </div>
+
+      <!-- Feedback Notifikasi di dalam Modal -->
+      <div id="modalFeedback" class="hidden mt-4 p-3 rounded-2xl text-center font-mono font-bold text-xs"></div>
+
+      <!-- Tombol Aksi -->
+      <div class="mt-6 flex items-center gap-3">
+        <button onclick="closeAnswerModal()" class="w-1/3 py-3 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-sm border border-slate-600 transition">
+          Batal
+        </button>
+        <button onclick="submitAnswer()" id="submitBtn" class="w-2/3 py-3 rounded-2xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm shadow-lg transition flex items-center justify-center gap-2">
+          <span>⚡</span> Eksekusi Jawaban (+50 / -20)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL PANDUAN 7-BIT & PATOKAN ASCII ================= -->
+  <div id="asciiModal" class="fixed inset-0 bg-slate-950/75 backdrop-blur-md z-50 hidden items-center justify-center p-4 no-print">
+    <div class="bg-cyber-panel border-2 border-amber-400/40 rounded-3xl max-w-2xl w-full p-6 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+        <h3 class="text-lg font-extrabold text-amber-200 font-mono flex items-center gap-2">
+          <span>📟</span> Panduan Biner 7-Bit (Tanpa Leading Zero) & ASCII
+        </h3>
+        <button onclick="closeAsciiModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold border border-slate-600">✕</button>
+      </div>
+
+      <div class="mt-4 space-y-4 text-sm">
+        <!-- Nilai Tempat 7-Bit -->
+        <div class="p-4 rounded-2xl bg-slate-900/90 border border-sky-400/30">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-extrabold text-sky-300 font-mono text-xs uppercase">
+              1. Bobot Nilai Tempat Biner 7-Bit (Mulai dari 64)
+            </span>
+            <span class="text-[11px] font-mono text-slate-400">2⁶ s.d. 2⁰</span>
+          </div>
+          <div class="grid grid-cols-7 gap-1.5 font-mono text-center text-sm font-extrabold mt-2">
+            <div class="bg-sky-500/25 border border-sky-400/50 p-2 rounded-xl text-sky-200">64</div>
+            <div class="bg-sky-500/20 border border-sky-400/30 p-2 rounded-xl text-sky-200">32</div>
+            <div class="bg-sky-500/20 border border-sky-400/30 p-2 rounded-xl text-sky-200">16</div>
+            <div class="bg-sky-500/20 border border-sky-400/30 p-2 rounded-xl text-sky-200">8</div>
+            <div class="bg-sky-500/20 border border-sky-400/30 p-2 rounded-xl text-sky-200">4</div>
+            <div class="bg-sky-500/20 border border-sky-400/30 p-2 rounded-xl text-sky-200">2</div>
+            <div class="bg-sky-500/20 border border-sky-400/30 p-2 rounded-xl text-sky-200">1</div>
+          </div>
+          <p class="text-xs text-slate-300 mt-2.5 font-mono">
+            Contoh: <b class="text-emerald-300">1000010</b> = 64 + 0 + 0 + 0 + 0 + 2 + 0 = <b class="text-amber-300">66</b> (Huruf <b>B</b>)
+          </p>
+        </div>
+
+        <!-- Tabel Patokan ASCII -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="p-3.5 rounded-2xl bg-emerald-500/15 border border-emerald-400/30">
+            <span class="text-xs font-mono font-extrabold uppercase text-emerald-300">Huruf Kapital (A-Z)</span>
+            <p class="text-base font-extrabold text-slate-100 mt-1 font-mono">65 s.d. 90 (7-Bit)</p>
+            <p class="text-xs text-slate-300 mt-1">
+              Selalu diawali <b class="font-mono text-emerald-300">10...</b><br/>
+              Trik: <b>Desimal - 64</b> = Urutan Abjad (A=1, B=2).
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-rose-500/15 border border-rose-400/30">
+            <span class="text-xs font-mono font-extrabold uppercase text-rose-300">Huruf Kecil (a-z)</span>
+            <p class="text-base font-extrabold text-slate-100 mt-1 font-mono">97 s.d. 122 (7-Bit)</p>
+            <p class="text-xs text-slate-300 mt-1">
+              Selalu diawali <b class="font-mono text-rose-300">11...</b><br/>
+              Trik: <b>Desimal - 96</b> = Urutan Abjad (a=1, b=2).
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-amber-500/15 border border-amber-400/30">
+            <span class="text-xs font-mono font-extrabold uppercase text-amber-300">Angka ('0' - '9')</span>
+            <p class="text-base font-extrabold text-slate-100 mt-1 font-mono">48 s.d. 57 (6-Bit)</p>
+            <p class="text-xs text-slate-300 mt-1">
+              Tanpa nol di depan menjadi <b>6-bit</b> (mulai dari 32).<br/>
+              Patokan: <b>'0' = 48 (110000)</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 text-right">
+        <button onclick="closeAsciiModal()" class="px-5 py-2.5 rounded-2xl bg-sky-500 text-slate-950 font-extrabold text-xs">Tutup Panduan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL PANEL GURU & GENERATOR LEMBAR KERTAS 7-BIT ================= -->
+  <div id="teacherModal" class="fixed inset-0 bg-slate-950/75 backdrop-blur-md z-50 hidden items-center justify-center p-4 no-print">
+    <div class="bg-cyber-panel border-2 border-sky-400/40 rounded-3xl max-w-3xl w-full p-6 shadow-2xl max-h-[90vh] flex flex-col">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+        <div>
+          <h3 class="text-lg font-extrabold text-sky-200 font-mono flex items-center gap-2">
+            <span>⚙️</span> ROOT_CONFIG: 50 Soal Biner 7-Bit & Cetak Kertas
+          </h3>
+          <p class="text-xs text-slate-400">Semua kata otomatis dikonversi menjadi biner murni tanpa angka 0 di depan (7-bit untuk huruf).</p>
+        </div>
+        <button onclick="closeTeacherModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold border border-slate-600">✕</button>
+      </div>
+
+      <div class="mt-4 flex-1 overflow-y-auto space-y-4 pr-1">
+        
+        <!-- Pengaturan Sensitivitas Huruf & Cetak -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-900/80 p-3.5 rounded-2xl border border-slate-700">
+          <div>
+            <label class="block text-xs font-mono font-extrabold text-sky-300 mb-1.5">Mode Pemeriksaan Huruf (Case-Check):</label>
+            <select id="caseModeSelect" onchange="updateCaseMode()" class="w-full p-2.5 rounded-xl bg-slate-800 border border-slate-600 text-xs font-bold text-slate-100">
+              <option value="insensitive">Fleksibel (Huruf Kapital/Kecil Dianggap Sama)</option>
+              <option value="strict">Strict / Ketat (Wajib Persis Kapital 65-90 vs Kecil 97-122)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-mono font-extrabold text-emerald-300 mb-1.5">Lembar Soal Kertas Kelompok (7-Bit):</label>
+            <button onclick="printQuestionSheet()" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs shadow flex items-center justify-center gap-2 transition">
+              <span>🖨️</span> Cetak / PDF 50 Soal Biner 7-Bit
+            </button>
+          </div>
+        </div>
+
+        <!-- Editor 50 Kata Kunci -->
+        <div>
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+            <label class="text-xs font-mono font-extrabold text-slate-200">
+              Daftar 50 Kata Kunci (Baris 1 = Soal #1 s.d. Baris 50 = Soal #50):
+            </label>
+            <div class="flex items-center gap-3">
+              <button onclick="toggleMaskAnswers()" id="maskBtn" class="text-xs font-mono font-bold text-amber-300 hover:underline">
+                👁️ Tampilkan / Sembunyikan Kata
+              </button>
+            </div>
+          </div>
+          <textarea 
+            id="wordListInput" 
+            rows="9"
+            style="-webkit-text-security: disc;"
+            class="w-full p-3.5 rounded-2xl bg-slate-900 border border-slate-600 font-mono text-xs font-bold text-sky-200 focus:outline-none focus:border-sky-400"
+          ></textarea>
+          <p class="text-[11px] text-slate-400 mt-1 font-mono">
+            * Setiap karakter dikonversi dengan <code class="text-emerald-300">charCodeAt(0).toString(2)</code> sehingga selalu diawali angka <code class="text-emerald-300">1</code> (tidak ada angka 0 di paling kiri).
+          </p>
+        </div>
+
+        <!-- Koreksi Skor Manual -->
+        <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-700">
+          <label class="block text-xs font-mono font-extrabold text-slate-300 mb-2">Override Skor Kelompok Manual:</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="manualScoreEditor">
+            <!-- Dirender oleh JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-slate-700 flex flex-wrap items-center justify-between gap-2">
+        <button onclick="restoreDefaultWords()" class="text-xs font-mono font-bold text-rose-300 hover:underline">
+          [Reset 50 Kata Default]
+        </button>
+        <div class="flex gap-2">
+          <button onclick="closeTeacherModal()" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 font-bold text-xs border border-slate-600">Tutup</button>
+          <button onclick="saveTeacherSettings()" class="px-5 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-xs shadow">
+            💾 Simpan Konfigurasi
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= AREA CETAK KERTAS SOAL (OTOMATIS 7-BIT TANPA LEADING ZERO) ================= -->
+  <div id="printArea" class="hidden print:block">
+    <div class="text-center border-b-2 border-black pb-3 mb-4">
+      <h1 class="text-xl font-bold uppercase tracking-wide">Lembar Misi Kelompok: 50 Sandi Biner (7-Bit) & ASCII</h1>
+      <p class="text-xs mt-1">
+        Konversikan setiap blok biner (tanpa angka 0 di depan) ke Desimal, lalu terjemahkan ke karakter ASCII! (Benar +50 | Salah -20)
+      </p>
+      <p class="text-xs font-mono mt-1 font-bold">
+        Bobot 7-Bit: [64 | 32 | 16 | 8 | 4 | 2 | 1] — Patokan ASCII: 'A'-'Z' = 65-90 | 'a'-'z' = 97-122 | '0'-'9' = 48-57
+      </p>
+    </div>
+    <div id="printGridContainer" class="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+      <!-- 50 Soal Biner 7-Bit dirender otomatis di sini saat cetak -->
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT LOGIKA GAME ================= -->
+  <script>
+    // 50 Kata Bawaan Bertema Informatika (Semuanya Huruf agar Murni 7-Bit Diawali Angka 1)
+    const DEFAULT_50_WORDS = [
+      "AIR", "Api", "uap", "GUA", "Ubi", "ara", "KOL", "Gas", "ion", "ROB",
+      "LAUT", "Awan", "bumi", "BATU", "Kayu", "daun", "AKAR", "Buah", "rawa", "LAVA",
+      "HUJAN", "Angin", "hutan", "TANAH", "Bukit", "danau", "PASIR", "Bunga", "pulau", "BADAI",
+      "GUNUNG", "Sungai", "pantai", "LEMBAH", "Tebing", "jurang", "KARANG", "Cahaya", "rumput", "SAVANA",
+      "BINTANG", "Mentari", "samudra", "PELANGI", "Kemarau", "gerhana", "GALAKSI", "Daratan", "ranting", "TANAMAN"
+    ];
+
+    // Konfigurasi 4 Kelompok dengan Tema Cyber Pastel Kontras Tinggi
+    const TEAMS_CONFIG = [
+      {
+        id: 0,
+        name: "Alpha",
+        greek: "α",
+        bar: "bg-sky-400",
+        code: "TEAM_01",
+        bgCard: "bg-sky-500/15",
+        borderCard: "border-sky-400/50",
+        textMain: "text-sky-200",
+        textSub: "text-sky-300",
+        claimedBox: "bg-sky-500/30 border-sky-400 text-sky-100"
+      },
+      {
+        id: 1,
+        name: "Beta",
+        greek: "β",
+        bar: "bg-emerald-400",
+        code: "TEAM_02",
+        bgCard: "bg-emerald-500/15",
+        borderCard: "border-emerald-400/50",
+        textMain: "text-emerald-200",
+        textSub: "text-emerald-300",
+        claimedBox: "bg-emerald-500/30 border-emerald-400 text-emerald-100"
+      },
+      {
+        id: 2,
+        name: "Gamma",
+        greek: "γ",
+        bar: "bg-amber-400",
+        code: "TEAM_03",
+        bgCard: "bg-amber-500/15",
+        borderCard: "border-amber-400/50",
+        textMain: "text-amber-200",
+        textSub: "text-amber-300",
+        claimedBox: "bg-amber-500/30 border-amber-400 text-amber-100"
+      },
+      {
+        id: 3,
+        name: "Delta",
+        greek: "δ",
+        bar: "bg-rose-400",
+        code: "TEAM_04",
+        bgCard: "bg-rose-500/15",
+        borderCard: "border-rose-400/50",
+        textMain: "text-rose-200",
+        textSub: "text-rose-300",
+        claimedBox: "bg-rose-500/30 border-rose-400 text-rose-100"
+      }
+    ];
+
+    let state = {
+      words: [...DEFAULT_50_WORDS],
+      caseMode: "insensitive",
+      scores: [0, 0, 0, 0],
+      solvedCount: [0, 0, 0, 0],
+      wrongCount: [0, 0, 0, 0],
+      boxes: Array.from({ length: 50 }, () => ({ solved: false, teamId: null })),
+      logs: [],
+      soundEnabled: true
+    };
+
+    let activeQuestionIndex = null;
+    let selectedTeamId = 0;
+    let isMasked = true;
+
+    function loadState() {
+      const saved = localStorage.getItem("binary_50box_7bit_v3");
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          state = { ...state, ...parsed };
+        } catch (e) {
+          console.error(e);
+        }
+      }
+    }
+
+    function saveState() {
+      localStorage.setItem("binary_50box_7bit_v3", JSON.stringify(state));
+    }
+
+    // Konversi Karakter ke Biner Murni Tanpa Leading Zero (7-Bit untuk Huruf ASCII 65-122)
+    function wordToBinaryNoLeadingZero(word) {
+      return word.split("").map(ch => ch.charCodeAt(0).toString(2));
+    }
+
+    // Efek Suara Synth Informatika
+    function playTone(type) {
+      if (!state.soundEnabled || typeof Tone === "undefined") return;
+      try {
+        Tone.start();
+        const synth = new Tone.PolySynth(Tone.Synth).toDestination();
+        const now = Tone.now();
+        if (type === "correct") {
+          synth.triggerAttackRelease(["C5", "E5", "G5", "C6"], "8n", now);
+        } else if (type === "wrong") {
+          synth.triggerAttackRelease(["F3", "B2"], "4n", now);
+        } else if (type === "click") {
+          synth.triggerAttackRelease(["G5"], "32n", now);
+        }
+      } catch (e) {}
+    }
+
+    function toggleSound() {
+      state.soundEnabled = !state.soundEnabled;
+      document.getElementById("soundBtn").textContent = state.soundEnabled ? "🔊" : "🔇";
+      saveState();
+    }
+
+    // Render Papan Skor 4 Kelompok
+    function renderScoreboard() {
+      const container = document.getElementById("scoreboardContainer");
+      container.innerHTML = TEAMS_CONFIG.map((team, idx) => {
+        const score = state.scores[idx];
+        const solved = state.solvedCount[idx];
+        const wrong = state.wrongCount[idx];
+        return `
+          <div class="relative overflow-hidden ${team.bgCard} border-2 ${team.borderCard} rounded-3xl p-4 backdrop-blur-md flex flex-col justify-between transition-all">
+            <div aria-hidden="true" class="greek-silhouette ${team.textMain}">${team.greek}</div>
+            <div class="relative z-10 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900/70 ${team.textSub} border border-white/10">
+                  ${team.code}
+                </span>
+                <h3 class="text-lg font-extrabold ${team.textMain} mt-1">${team.name}</h3>
+              </div>
+              <div class="text-right">
+                <div class="text-3xl font-extrabold font-mono ${score < 0 ? 'text-rose-400' : team.textMain}">
+                  ${score}
+                </div>
+                <span class="text-[10px] font-mono font-bold ${team.textSub}">PTS</span>
+              </div>
+            </div>
+            <div class="relative z-10 mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between text-xs font-mono font-bold ${team.textSub}">
+              <span>ACK: ${solved}</span>
+              <span>ERR: ${wrong}</span>
+            </div>
+          </div>
+        `;
+      }).join("");
+      renderStandings();
+    }
+
+    // Render Klasemen Poin (urut skor, lalu jumlah ACK terbanyak, lalu ERR tersedikit)
+    function renderStandings() {
+      const box = document.getElementById("standingsContainer");
+      if (!box) return;
+      const ROW = 60;
+      const hasActivity = state.solvedCount.some((v, i) => v + state.wrongCount[i] > 0) || state.scores.some(v => v !== 0);
+
+      const order = TEAMS_CONFIG.map((t, i) => i).sort((a, b) =>
+        (state.scores[b] - state.scores[a]) ||
+        (state.solvedCount[b] - state.solvedCount[a]) ||
+        (state.wrongCount[a] - state.wrongCount[b]) ||
+        (a - b)
+      );
+      const sameAs = (a, b) => state.scores[a] === state.scores[b] &&
+        state.solvedCount[a] === state.solvedCount[b] && state.wrongCount[a] === state.wrongCount[b];
+
+      const ranks = {};
+      order.forEach((tid, pos) => {
+        ranks[tid] = (pos > 0 && sameAs(tid, order[pos - 1])) ? ranks[order[pos - 1]] : pos + 1;
+      });
+
+      if (!box.dataset.built) {
+        box.innerHTML = TEAMS_CONFIG.map((team, idx) => `
+          <div class="standing-row" data-team="${idx}">
+            <div class="h-[52px] rounded-2xl border ${team.borderCard} ${team.bgCard} px-3 flex items-center gap-3 relative overflow-hidden">
+              <div class="st-rank w-8 text-center text-xl font-extrabold font-mono text-slate-200 shrink-0"></div>
+              <div class="w-8 h-8 rounded-xl bg-slate-900/70 border border-white/10 flex items-center justify-center text-lg font-extrabold font-mono ${team.textMain} shrink-0">${team.greek}</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline justify-between gap-2">
+                  <span class="text-sm font-extrabold ${team.textMain} truncate">${team.name}</span>
+                  <span class="st-pts text-sm font-extrabold font-mono text-slate-100"></span>
+                </div>
+                <div class="mt-1 h-1.5 rounded-full bg-slate-900/70 overflow-hidden">
+                  <div class="st-bar standing-bar h-full rounded-full ${team.bar}" style="width:0%"></div>
+                </div>
+                <div class="st-meta mt-0.5 text-[10px] font-mono font-bold text-slate-400"></div>
+              </div>
+            </div>
+          </div>
+        `).join("");
+        box.dataset.built = "1";
+      }
+
+      const leader = state.scores[order[0]];
+      const medals = ["🥇", "🥈", "🥉"];
+      order.forEach((tid, pos) => {
+        const row = box.querySelector(`[data-team="${tid}"]`);
+        row.style.transform = `translateY(${pos * (ROW + 0)}px)`;
+        const r = ranks[tid];
+        row.querySelector(".st-rank").textContent = hasActivity ? (medals[r - 1] || r) : "–";
+        const pts = state.scores[tid];
+        const ptsEl = row.querySelector(".st-pts");
+        ptsEl.textContent = pts + " PTS";
+        ptsEl.classList.toggle("text-rose-400", pts < 0);
+        ptsEl.classList.toggle("text-slate-100", pts >= 0);
+        const pct = leader > 0 ? Math.max(0, pts) / leader * 100 : 0;
+        row.querySelector(".st-bar").style.width = pct + "%";
+        row.querySelector(".st-meta").textContent = `ACK ${state.solvedCount[tid]}  ·  ERR ${state.wrongCount[tid]}`;
+      });
+
+      const note = document.getElementById("standingsNote");
+      if (note) note.textContent = hasActivity ? "LIVE_RANK" : "BELUM_ADA_SKOR";
+    }
+
+    // Render 50 Node Soal
+    function renderGrid() {
+      const grid = document.getElementById("questionGrid");
+      let remaining = 0;
+
+      grid.innerHTML = state.boxes.map((box, idx) => {
+        const qNum = idx + 1;
+        const qLabel = String(qNum).padStart(2, "0");
+        if (!box.solved) remaining++;
+
+        if (box.solved && box.teamId !== null) {
+          const team = TEAMS_CONFIG[box.teamId];
+          const word = state.words[idx] || "";
+          return `
+            <button disabled class="${team.claimedBox} border-2 rounded-2xl p-2 h-16 md:h-20 flex flex-col items-center justify-center shadow-inner cursor-not-allowed">
+              <span class="text-[10px] font-mono font-extrabold uppercase opacity-80">#${qLabel}</span>
+              <span class="font-mono font-extrabold text-xs md:text-sm truncate max-w-full px-1 mt-0.5">${word}</span>
+              <span class="text-[9px] font-mono font-bold mt-0.5 px-1.5 py-0.2 bg-slate-950/60 rounded">${team.greek} ${team.name.toUpperCase()}</span>
+            </button>
+          `;
+        }
+
+        return `
+          <button 
+            onclick="openTeamPicker(${idx})" 
+            class="node-box bg-cyber-card hover:bg-sky-500/20 border-2 border-cyber-border rounded-2xl p-2 h-16 md:h-20 flex flex-col items-center justify-center group"
+          >
+            <span class="text-[10px] font-mono font-bold text-slate-400 group-hover:text-sky-300 uppercase">NODE</span>
+            <span class="text-xl md:text-2xl font-extrabold text-slate-100 group-hover:text-sky-200 font-mono">${qLabel}</span>
+          </button>
+        `;
+      }).join("");
+
+      document.getElementById("remainingCounter").textContent = `OPEN_NODES: ${remaining} / 50`;
+    }
+
+    // Render Log Aktivitas Terminal
+    function renderLogs() {
+      const logContainer = document.getElementById("activityLog");
+      if (state.logs.length === 0) {
+        logContainer.innerHTML = `
+          <div class="text-slate-400 italic text-center py-8">
+            > Menunggu input dekoding dari kelompok...
+          </div>
+        `;
+        return;
+      }
+
+      logContainer.innerHTML = state.logs.map(item => {
+        const badgeColor = item.correct 
+          ? "bg-emerald-500/15 border-emerald-400/40 text-emerald-200" 
+          : "bg-rose-500/15 border-rose-400/40 text-rose-200";
+        const deltaText = item.correct ? "+50" : "-20";
+        return `
+          <div class="p-2.5 rounded-2xl border ${badgeColor} flex items-center justify-between gap-2">
+            <div>
+              <div class="font-extrabold">
+                ${item.teamName} :: <span>NODE_#${String(item.qNum).padStart(2, '0')}</span>
+              </div>
+              <div class="text-[11px] opacity-85">
+                ${item.correct ? `DECODED -> "${item.answer}"` : `INVALID_STRING_ERR`}
+              </div>
+            </div>
+            <div class="font-extrabold text-xs px-2 py-1 rounded-lg bg-slate-950/60">
+              ${deltaText}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // Buka Modal Input Jawaban
+    // Popup 1: pilih kelompok dulu
+    let pendingQuestionIndex = null;
+
+    function openTeamPicker(index) {
+      if (state.boxes[index].solved) return;
+      playTone("click");
+      pendingQuestionIndex = index;
+      document.getElementById("pickQBadge").textContent = `#${String(index + 1).padStart(2, "0")}`;
+      renderTeamPicker();
+      const modal = document.getElementById("teamPickModal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeTeamPicker() {
+      const modal = document.getElementById("teamPickModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function renderTeamPicker() {
+      document.getElementById("teamPickContainer").innerHTML = TEAMS_CONFIG.map((team, idx) => `
+        <button type="button" onclick="chooseTeamAndAnswer(${idx})"
+          class="node-box relative overflow-hidden text-left p-4 h-28 rounded-2xl border-2 ${team.borderCard} ${team.bgCard} flex flex-col justify-between">
+          <div aria-hidden="true" class="greek-silhouette ${team.textMain}" style="font-size:6.5rem; bottom:-1.6rem; right:0;">${team.greek}</div>
+          <span class="relative z-10 text-[10px] font-mono font-extrabold uppercase tracking-wider ${team.textSub}">${team.code}</span>
+          <div class="relative z-10">
+            <div class="text-lg font-extrabold ${team.textMain}">${team.name}</div>
+            <div class="text-[11px] font-mono font-bold ${team.textSub}">PTS: ${state.scores[idx]}</div>
+          </div>
+        </button>
+      `).join("");
+    }
+
+    // Setelah kelompok dipilih -> tampilkan popup jawaban
+    function chooseTeamAndAnswer(teamIdx) {
+      selectedTeamId = teamIdx;
+      const idx = pendingQuestionIndex;
+      closeTeamPicker();
+      if (idx === null) return;
+      openAnswerModal(idx);
+    }
+
+    // Popup 2: isi jawaban
+    function openAnswerModal(index) {
+      if (state.boxes[index].solved) return;
+      playTone("click");
+      activeQuestionIndex = index;
+
+      const targetWord = state.words[index] || "";
+      document.getElementById("modalQBadge").textContent = `#${String(index + 1).padStart(2, "0")}`;
+      document.getElementById("charLengthHint").textContent = `LEN: ${targetWord.length} CHAR`;
+      document.getElementById("caseSensitivityNote").textContent = 
+        state.caseMode === "strict"
+          ? "⚠️ STRICT_MODE: Huruf Kapital (65-90) & Kecil (97-122) harus persis!"
+          : "💡 FLEX_MODE: Huruf kapital/kecil dianggap sama selama karakter tepat.";
+
+      const input = document.getElementById("answerInput");
+      input.value = "";
+      document.getElementById("modalFeedback").classList.add("hidden");
+
+      renderTeamSelector();
+      const modal = document.getElementById("answerModal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      setTimeout(() => input.focus(), 80);
+    }
+
+    function closeAnswerModal() {
+      const modal = document.getElementById("answerModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      activeQuestionIndex = null;
+    }
+
+    function renderTeamSelector() {
+      const container = document.getElementById("teamSelectorContainer");
+      const team = TEAMS_CONFIG[selectedTeamId];
+      container.innerHTML = `
+        <div class="relative overflow-hidden flex items-center justify-between gap-3 p-3 rounded-2xl border-2 ${team.borderCard} ${team.bgCard}">
+          <div class="flex items-center gap-3 relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-slate-900/70 border border-white/10 flex items-center justify-center text-2xl font-extrabold font-mono ${team.textMain}">${team.greek}</div>
+            <div>
+              <div class="text-sm font-extrabold ${team.textMain}">${team.name}</div>
+              <div class="text-[11px] font-mono font-bold ${team.textSub}">PTS: ${state.scores[selectedTeamId]}</div>
+            </div>
+          </div>
+          <button type="button" onclick="changeTeam()" class="relative z-10 text-[11px] font-mono font-bold px-3 py-1.5 rounded-lg bg-slate-900/70 border border-slate-600 text-slate-200 hover:bg-slate-800 transition">
+            ↻ Ganti
+          </button>
+        </div>
+      `;
+    }
+
+    // Kembali ke popup pilih kelompok
+    function changeTeam() {
+      const idx = activeQuestionIndex;
+      closeAnswerModal();
+      if (idx !== null) openTeamPicker(idx);
+    }
+
+    // Periksa Jawaban (+50 / -20)
+    function submitAnswer() {
+      if (activeQuestionIndex === null) return;
+      const inputEl = document.getElementById("answerInput");
+      const rawAnswer = inputEl.value.trim();
+      const feedbackEl = document.getElementById("modalFeedback");
+
+      if (!rawAnswer) {
+        feedbackEl.textContent = "⚠️ INPUT_EMPTY: Ketik kata hasil dekoding terlebih dahulu!";
+        feedbackEl.className = "mt-4 p-3 rounded-2xl text-center font-mono font-bold text-xs bg-amber-500/20 text-amber-200 border border-amber-400/40 block";
+        return;
+      }
+
+      const correctWord = (state.words[activeQuestionIndex] || "").trim();
+      const isCorrect = state.caseMode === "strict"
+        ? rawAnswer === correctWord
+        : rawAnswer.toUpperCase() === correctWord.toUpperCase();
+
+      const team = TEAMS_CONFIG[selectedTeamId];
+      const qNum = activeQuestionIndex + 1;
+
+      if (isCorrect) {
+        playTone("correct");
+        state.scores[selectedTeamId] += 50;
+        state.solvedCount[selectedTeamId] += 1;
+        state.boxes[activeQuestionIndex] = {
+          solved: true,
+          teamId: selectedTeamId
+        };
+
+        state.logs.unshift({
+          qNum,
+          teamName: team.name,
+          correct: true,
+          answer: correctWord
+        });
+
+        saveState();
+        renderScoreboard();
+        renderGrid();
+        renderLogs();
+
+        feedbackEl.innerHTML = `✅ ACCESS_GRANTED! Node #${qNum} = "${correctWord}". ${team.name} +50 PTS!`;
+        feedbackEl.className = "mt-4 p-3 rounded-2xl text-center font-mono font-bold text-xs bg-emerald-500/20 text-emerald-200 border border-emerald-400/40 block";
+
+        setTimeout(() => {
+          closeAnswerModal();
+        }, 900);
+
+      } else {
+        playTone("wrong");
+        state.scores[selectedTeamId] -= 20;
+        state.wrongCount[selectedTeamId] += 1;
+
+        state.logs.unshift({
+          qNum,
+          teamName: team.name,
+          correct: false,
+          answer: rawAnswer
+        });
+
+        saveState();
+        renderScoreboard();
+        renderLogs();
+        renderTeamSelector();
+
+        const modalBox = document.getElementById("answerModalBox");
+        modalBox.classList.remove("animate-shake");
+        void modalBox.offsetWidth;
+        modalBox.classList.add("animate-shake");
+
+        feedbackEl.innerHTML = `❌ ACCESS_DENIED! ${team.name} -20 PTS. Node #${qNum} masih terbuka!`;
+        feedbackEl.className = "mt-4 p-3 rounded-2xl text-center font-mono font-bold text-xs bg-rose-500/20 text-rose-200 border border-rose-400/40 block";
+        inputEl.select();
+      }
+    }
+
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") { closeTeamPicker(); closeAnswerModal(); }
+    });
+
+    document.getElementById("answerInput").addEventListener("keydown", function(e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        submitAnswer();
+      }
+    });
+
+    function openAsciiModal() {
+      const m = document.getElementById("asciiModal");
+      m.classList.remove("hidden");
+      m.classList.add("flex");
+    }
+    function closeAsciiModal() {
+      const m = document.getElementById("asciiModal");
+      m.classList.add("hidden");
+      m.classList.remove("flex");
+    }
+
+    function openTeacherModal() {
+      document.getElementById("wordListInput").value = state.words.join("\n");
+      document.getElementById("caseModeSelect").value = state.caseMode;
+      renderManualScoreEditor();
+      const m = document.getElementById("teacherModal");
+      m.classList.remove("hidden");
+      m.classList.add("flex");
+    }
+
+    function closeTeacherModal() {
+      const m = document.getElementById("teacherModal");
+      m.classList.add("hidden");
+      m.classList.remove("flex");
+    }
+
+    function toggleMaskAnswers() {
+      isMasked = !isMasked;
+      const area = document.getElementById("wordListInput");
+      area.style.webkitTextSecurity = isMasked ? "disc" : "none";
+    }
+
+    function updateCaseMode() {
+      state.caseMode = document.getElementById("caseModeSelect").value;
+      saveState();
+    }
+
+    function renderManualScoreEditor() {
+      const container = document.getElementById("manualScoreEditor");
+      container.innerHTML = TEAMS_CONFIG.map((team, idx) => `
+        <div class="bg-slate-800/90 p-2.5 rounded-xl border border-slate-600 text-center">
+          <div class="text-xs font-extrabold ${team.textMain}">${team.name}</div>
+          <div class="font-mono font-bold text-sm text-slate-100 my-1">${state.scores[idx]}</div>
+          <div class="flex justify-center gap-1.5 mt-1">
+            <button onclick="adjustScore(${idx}, -20)" class="px-2 py-1 rounded bg-rose-500/30 border border-rose-400/40 text-rose-200 font-mono font-bold text-[11px]">-20</button>
+            <button onclick="adjustScore(${idx}, 50)" class="px-2 py-1 rounded bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 font-mono font-bold text-[11px]">+50</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function adjustScore(teamIdx, delta) {
+      state.scores[teamIdx] += delta;
+      saveState();
+      renderScoreboard();
+      renderManualScoreEditor();
+    }
+
+    function saveTeacherSettings() {
+      const rawLines = document.getElementById("wordListInput").value
+        .split("\n")
+        .map(s => s.trim())
+        .filter(Boolean);
+
+      if (rawLines.length < 50) {
+        alert(`Jumlah kata baru ${rawLines.length}. Sisanya akan dilengkapi otomatis agar pas 50 soal.`);
+        while (rawLines.length < 50) {
+          rawLines.push(DEFAULT_50_WORDS[rawLines.length % DEFAULT_50_WORDS.length]);
+        }
+      }
+
+      state.words = rawLines.slice(0, 50);
+      state.caseMode = document.getElementById("caseModeSelect").value;
+      saveState();
+      renderGrid();
+      closeTeacherModal();
+    }
+
+    function restoreDefaultWords() {
+      if (confirm("Kembalikan daftar 50 kata ke kata bawaan (murni 7-bit)?")) {
+        document.getElementById("wordListInput").value = DEFAULT_50_WORDS.join("\n");
+      }
+    }
+
+    // Kosongkan semua kotak (jawaban kembali kosong), skor kelompok tetap
+    function confirmResetBoxes() {
+      if (confirm("Kosongkan kembali semua kotak jawaban? (Skor kelompok tidak berubah)")) {
+        state.boxes = Array.from({ length: 50 }, () => ({ solved: false, teamId: null }));
+        saveState();
+        renderGrid();
+      }
+    }
+
+    function confirmResetGame() {
+      if (confirm("Reset semua skor kelompok dan buka kembali ke-50 node soal?")) {
+        state.scores = [0, 0, 0, 0];
+        state.solvedCount = [0, 0, 0, 0];
+        state.wrongCount = [0, 0, 0, 0];
+        state.boxes = Array.from({ length: 50 }, () => ({ solved: false, teamId: null }));
+        state.logs = [];
+        saveState();
+        renderScoreboard();
+        renderGrid();
+        renderLogs();
+      }
+    }
+
+    // Cetak Lembar 50 Soal Biner 7-Bit (Tanpa Leading Zero)
+    function printQuestionSheet() {
+      const rawLines = document.getElementById("wordListInput").value
+        .split("\n")
+        .map(s => s.trim())
+        .filter(Boolean);
+      if (rawLines.length === 50) {
+        state.words = rawLines;
+        saveState();
+      }
+
+      const printContainer = document.getElementById("printGridContainer");
+      printContainer.innerHTML = state.words.map((word, idx) => {
+        const binaries = wordToBinaryNoLeadingZero(word).join("   ");
+        return `
+          <div class="border-b border-slate-300 py-1.5 flex items-start justify-between gap-2">
+            <div>
+              <span class="font-bold font-mono mr-1">No.${String(idx + 1).padStart(2, '0')}:</span>
+              <span class="font-mono tracking-tight font-semibold">${binaries}</span>
+            </div>
+            <div class="border-b border-black w-20 shrink-0 text-right text-[9px] text-slate-500 font-mono">
+              (${word.length} char)
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      window.print();
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      loadState();
+      renderScoreboard();
+      renderGrid();
+      renderLogs();
+    });
+  </script>
+  <script>
+    /* ===== Animasi latar belakang: hujan biner 0/1 + jaringan node ===== */
+    (function () {
+      const cv = document.getElementById('techBg');
+      const ctx = cv.getContext('2d');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const CELL = 22, TAIL = 14;
+      let W = 0, H = 0, dpr = 1, cols = [], nodes = [], last = 0, running = true;
+
+      function resize() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        W = window.innerWidth; H = window.innerHeight;
+        cv.width = W * dpr; cv.height = H * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        const n = Math.ceil(W / CELL);
+        cols = Array.from({ length: n }, (_, i) => ({
+          x: i * CELL + 4,
+          y: Math.random() * H,
+          speed: 0.5 + Math.random() * 1.3,
+          active: Math.random() < 0.38,
+          chars: Array.from({ length: TAIL }, () => (Math.random() < 0.5 ? '0' : '1'))
+        }));
+        const count = Math.max(18, Math.min(46, Math.floor((W * H) / 38000)));
+        nodes = Array.from({ length: count }, () => ({
+          x: Math.random() * W, y: Math.random() * H,
+          vx: (Math.random() - 0.5) * 0.28, vy: (Math.random() - 0.5) * 0.28,
+          g: Math.random() < 0.25
+        }));
+      }
+
+      function draw(t) {
+        if (!running) return;
+        requestAnimationFrame(draw);
+        if (t - last < 33) return;          // ~30 fps
+        last = t;
+        ctx.clearRect(0, 0, W, H);
+
+        // jaringan node
+        const maxD = 150;
+        for (let i = 0; i < nodes.length; i++) {
+          const a = nodes[i];
+          if (!reduce) {
+            a.x += a.vx; a.y += a.vy;
+            if (a.x < 0 || a.x > W) a.vx *= -1;
+            if (a.y < 0 || a.y > H) a.vy *= -1;
+          }
+          for (let j = i + 1; j < nodes.length; j++) {
+            const b = nodes[j], dx = a.x - b.x, dy = a.y - b.y, d = Math.hypot(dx, dy);
+            if (d < maxD) {
+              ctx.strokeStyle = 'rgba(56,189,248,' + (0.16 * (1 - d / maxD)).toFixed(3) + ')';
+              ctx.lineWidth = 1;
+              ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+            }
+          }
+        }
+        for (const n of nodes) {
+          ctx.fillStyle = n.g ? 'rgba(52,211,153,0.55)' : 'rgba(56,189,248,0.5)';
+          ctx.beginPath(); ctx.arc(n.x, n.y, 2.2, 0, Math.PI * 2); ctx.fill();
+        }
+
+        // hujan biner
+        ctx.font = '600 14px "JetBrains Mono", monospace';
+        ctx.textBaseline = 'top';
+        for (const c of cols) {
+          if (!c.active) continue;
+          if (!reduce) {
+            c.y += c.speed * 1.6;
+            if (Math.random() < 0.06) c.chars[(Math.random() * TAIL) | 0] = Math.random() < 0.5 ? '0' : '1';
+            if (c.y - TAIL * CELL * 0.7 > H) {
+              c.y = -Math.random() * 200;
+              c.speed = 0.5 + Math.random() * 1.3;
+              c.active = Math.random() < 0.7;
+            }
+          }
+          for (let k = 0; k < TAIL; k++) {
+            const y = c.y - k * 16;
+            if (y < -16 || y > H) continue;
+            const a = (k === 0 ? 0.55 : 0.2 * (1 - k / TAIL));
+            ctx.fillStyle = k === 0 ? 'rgba(167,243,208,' + a + ')' : 'rgba(56,189,248,' + a.toFixed(3) + ')';
+            ctx.fillText(c.chars[k], c.x, y);
+          }
+        }
+        // kolom yang sudah tidak aktif kadang menyala lagi
+        if (!reduce && Math.random() < 0.05) {
+          const c = cols[(Math.random() * cols.length) | 0];
+          if (c && !c.active) { c.active = true; c.y = -Math.random() * 200; }
+        }
+      }
+
+      window.addEventListener('resize', resize);
+      document.addEventListener('visibilitychange', () => {
+        const was = running; running = !document.hidden;
+        if (running && !was) requestAnimationFrame(draw);
+      });
+      resize();
+      requestAnimationFrame(draw);
+    })();
+  </script>
+</body>
+</html>
